@@ -5,7 +5,6 @@ import shortid from 'shortid';
 const reducer = (state, action) => {
     switch (action.type) {
         case 'REMOVE_BOOK': 
-        console.log('booksState', state);
             return { ...state, books: state.books.filter(book => book.id !== action.payload)};
         case 'ADD_BOOK':
             return {...state, books: [...state.books, {...action.payload, id:shortid() }]};

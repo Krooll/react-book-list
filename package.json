@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "json": "^11.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "7.2.5",
@@ -13,12 +14,15 @@
     "redux": "4.2.0",
     "redux-devtools-extension": "2.13.9",
     "sass": "^1.64.1",
+    "server": "^1.0.38",
     "short-id": "^0.1.0-1",
     "shortid": "^2.2.16",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm-run-all -p start:*",
+    "start:react": "react-scripts start",
+    "start:server": "json-server --port 3131 --no-cors --delay 250 --watch public/db/app.json --routes public/db/routes.json",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

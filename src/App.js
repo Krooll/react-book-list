@@ -3,7 +3,6 @@ import BookHeader from './components/BookHeader/BookHeader';
 import BookList from './components/BookList/BookList';
 import FindBook from './components/FindBook/FindBook';
 
-
 const App = () => {
 
   return (

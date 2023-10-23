@@ -1,5 +1,5 @@
-const initialState = {
-    books: [
+{
+  "books": [
       { "id":1, "title": "The Witcher", "author": "Andrzej Sapkowski" },
       { "id":2, "title": "Java od podstaw", "author": "Marcin Moskala" },
       { "id":3, "title": "tytul1", "author": "Michał Sułkowski" },
@@ -11,9 +11,5 @@ const initialState = {
       { "id":9, "title": "tytul7", "author": "Michał Sułkowski" },
       { "id":10, "title": "tytul8", "author": "Michał Sułkowski" },
       { "id":11, "title": "tytul9", "author": "Michał Sułkowski" }
-    ],
-
-    searchBook: '',
-};
-
-export default initialState;
+  ]
+}
